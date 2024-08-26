@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build project with Maven
+        run: mvn -B package --file pom.xml
