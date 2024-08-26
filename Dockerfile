@@ -1,4 +1,4 @@
-FROM maven:3.8.7-openjdk-11-slim AS builder
+FROM maven:3.8.7-openjdk-11-slim AS build
 RUN mkdir -p /workspace
 WORKDIR /workspace
 COPY pom.xml /workspace
