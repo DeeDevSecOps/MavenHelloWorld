@@ -11,3 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build project with Maven
         run: mvn -B package --file pom.xml
+      
+      - name: Display
+        run: java -jar target/maven-app-1.0-SNAPSHOT.jar
+
